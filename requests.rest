@@ -1,0 +1,24 @@
+POST http://localhost:3333/repositories
+content-type: application/json
+
+{
+  "title": "NodeJS's Challenge",
+  "url": "https://github.com/sp4wnx",
+  "techs": ["Node.js", "VueJS"]
+}
+
+###
+PUT http://localhost:3333/repositories/b1b8b843-9c7d-42ab-92e8-ef37b9a1aefd
+content-type: application/json
+
+{
+  "title": "NodeJS's Challenge !!!Changed!!!",
+  "url": "https://github.com/sp4wnx-wrong",
+  "techs": ["Node.js", "VueJS", "ReactJS"]
+}
+
+###
+GET http://localhost:3333/repositories
+
+###
+POST http://localhost:3333/repositories/720ff355-1b7f-41ef-9003-b8dc8bc03e8e/like
